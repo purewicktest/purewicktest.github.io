@@ -1,0 +1,64 @@
+:root {
+  --first-color: #16021b;
+  --second-color: rgb(74, 30, 83);
+  --third-color: #4c3880;
+  --fourth-color: #D4ADFC;
+  --text-color: #d4d4d4;
+}
+
+* {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: var(--first-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--second-color);
+  margin: 20px 0;
+}
+
+button,
+.feedback input[type="submit"] {
+  background-color: var(--second-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  margin-top: 50px;
+  padding: 10px 40px;
+  letter-spacing: 2px;
+}
+
+button:hover,
+.feedback input[type="submit"]:hover {
+  background-color: var(--third-color);
+  color: var(--text-color);
+}
+
+/* Keep your existing CSS for other styles */
+
+.score-container {
+  text-align: center;
+}
+
+.score {
+  font-size: 7em;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.score-class {
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: center;
+}
