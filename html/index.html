@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>**WankWick**</title>
-    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="/css/index.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DZPMWS3W"></script>
@@ -23,10 +23,34 @@
         <p>The Purewick Test <b>will</b> historically served as a segue from freshers to true university life at Warwick. It's a <b>mandatory</b> opportunity for freshers to bond, and for students to track the maturation of their experiences throughout university.</p>
         <br>
         <p><b>Caution: This is a bucket list. Completion of all items on this test will result in death. </b></p>
-        </header>
-        <hr>
+        <br>
 
-<!-- this needs to be fixed 
+        <!--this is temp -->
+        <p>LIMITED EDITION SUGGESTION BOX! (Definitely won't be here for months)</p>
+        <div class="form-container">
+            <div class="expand-arrows" onclick="toggleForm()">▼</div>
+            <div class="expandable-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfm6dTZZNToY-Lba_PcFIoGsTuGAyUeJ5hbpWRB__11gKUi7Q/viewform?embedded=true" width="640" height="406" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <script>
+                var formVisible = false;
+
+                function toggleForm() {
+                    var formSection = document.querySelector('.expandable-form');
+                    if (formVisible) {
+                        formSection.style.height = '0';
+                    } else {
+                        formSection.style.height = '406px'; // Set the height to the height of the form
+                    }
+                    formVisible = !formVisible;
+                }
+              </script>
+        </div>
+
+    </header>
+    <hr>
+
+<!-- this needs to be fixed / i cbfuckkkkingggaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     <div class="uni-picker-container">
       <p>Please enter your University: </p>
         <div class="dropdown">
@@ -49,12 +73,12 @@
 
     <footer class="footer">
         <hr>
-        <a href="https://www.instagram.com/purewicktest/" target="_blank">The Pure Wick Test Instagram</a>
+        <a href="https://www.instagram.com/purewickdick/" target="_blank">The Pure Wick Test Instagram</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
-    <script src="questions.js"></script>
-    <script src="main.js"></script>
-    <script src="universities.js"></script>
+    <script src="/js/questions.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/universities.js"></script>
 </body>
 </html>

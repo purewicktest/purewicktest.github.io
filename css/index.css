@@ -138,3 +138,23 @@ button:hover,
   color: var(--text-color);
 }
 */
+
+.form-container {
+  position: relative;
+  text-align: center;
+}
+
+.expand-arrows {
+  font-size: 2.5em;
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+
+.expandable-form {
+  overflow: hidden;
+  transition: height 0.5s;
+  height: 0;
+  border-radius: 1px;
+  border-color: var(--fourth-color);
+}
