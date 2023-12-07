@@ -38,7 +38,7 @@ function submitQuiz() {
   // Check if the score is a valid number
   if (!isNaN(sanitizedScore)) {
     sessionStorage.setItem('score', sanitizedScore);
-    window.location.href = '/html/result.html';
+    window.location.href = 'result.html'; //ill solve it later (i wont)
   } else {
     // Handle the case where the score is not a valid number
     console.error('Invalid score value.');
