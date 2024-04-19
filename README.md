@@ -1,4 +1,4 @@
 
 URL: https://purewick.uk
-Contact email: Purewick@gmail.com
+Contact email: Purewickuk@gmail.com
 Contact instagram: purewickdick
