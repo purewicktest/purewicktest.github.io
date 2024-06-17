@@ -61,20 +61,20 @@ input[type="checkbox"]:checked {
   background-color: var(--third-color);
 }
 
-button,
-.feedback input[type="submit"] {
-  background-color: var(--second-color);
-  color: var(--text-color);
-  transition: all 0.3s ease;
+#submit-button {
   padding: 10px 40px;
+  font-size: 1em;
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
+  background-color: var(--first-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-color);
+  transition: all 0.3s ease;
   letter-spacing: 2px;
 }
 
-button:hover,
-.feedback input[type="submit"]:hover {
-  background-color: var(--third-color);
+#submit-button:hover {
+  background-color: var(--second-color);
   color: var(--text-color);
 }
 

@@ -17,16 +17,49 @@
     
 </head>
 
+
 <body>
     <div class="score-container">
-        
         <h1>Your Score Is:</h1>
         <span id="score" class="score"></span>
         <p id="scoreClass" class="score-class"></p>
+        <p id="selected-uni-text"></p> 
+        
+        <p>This means you are:</p>
+        <div id="percentageLabel"></div>
+        </div>
+    </div>
 
-        <a href="../index.html"><button>Back to quiz</button></a>
+    <!--
+    <div class="sort-options">
+        <label for="sortOrder">Sort Order:</label>
+        <select id="sortOrder" onchange="sortTable()">
+            <option value="asc">Lowest to Highest</option>
+            <option value="desc">Highest to Lowest</option>
+        </select>
+        <label for="timeRange">Time Range:</label>
+        <select id="timeRange" onchange="filterByTime()">
+            <option value="7">7 Days</option>
+            <option value="30">30 Days</option>
+            <option value="365">1 Year</option>
+            <option value="all">All Time</option>
+        </select>
+    </div>
 
+
+    <div class="average-scores">
+        <h2>Average Scores by University</h2>
+        <div id="averageScoresChartContainer">
+            <canvas id="averageScoresChart" width="800" height="400"></canvas>
+        </div>
+    </div>
+    -->
+
+    <button id="back-button" onclick="backButton()">Back to quiz</button>
+
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    -->
     <script src="/js/result.js"></script>
 </body>
-
 </html>

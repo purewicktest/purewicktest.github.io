@@ -30,21 +30,22 @@ hr {
 
 button,
 .feedback input[type="submit"] {
-  background-color: var(--second-color);
-  color: var(--text-color);
-  transition: all 0.3s ease;
-  margin-top: 50px;
   padding: 10px 40px;
+  font-size: 1em;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: var(--first-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-color);
+  transition: all 0.3s ease;
   letter-spacing: 2px;
 }
 
 button:hover,
 .feedback input[type="submit"]:hover {
-  background-color: var(--third-color);
+  background-color: var(--second-color);
   color: var(--text-color);
 }
-
-/* Keep your existing CSS for other styles */
 
 .score-container {
   text-align: center;
@@ -54,7 +55,7 @@ button:hover,
   font-size: 7em;
   font-weight: bold;
   display: block;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto; 
 }
 
 .score-class {
