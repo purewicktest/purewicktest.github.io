@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/css/result.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DZPMWS3W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-T3DZPMWS3W');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="top-branding">
+        <a href="index.html">
+            <img src="img/top-branding.png" width="300" height="100" alt="Top Branding">
+        </a>
+    </div>
+
+    <div class="score-container">
+        <h1>Your Score Is:</h1>
+        <span id="score" class="score"></span>
+        <p id="scoreClass" class="score-class"></p>
+        <p id="selected-uni-text"></p> 
+    </div>
+
+    <section class="explanation-section">
+        <p class="explanation-title">Comments:</p>
+        <div id="percentageLabel" class="explanation-text"></div>
+    </section>
+
+    <div class="button-container">
+        <button id="back-button" onclick="backButton()">Back to quiz</button>
+        <button id="other-scores-button" onclick="uniScoreButton()">See Uni Scores</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
+    <script src="/js/result.js"></script>
+</body>
+</html>

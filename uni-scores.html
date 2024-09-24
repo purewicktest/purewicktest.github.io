@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uni Scores</title>
+    <link rel="stylesheet" href="css/uni-scores.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DZPMWS3W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T3DZPMWS3W');
+    </script>
+</head>
+
+<body>
+    <div class="top-branding">
+        <a href="index.html">
+            <img src="img/top-branding.png" width="300" height="100" alt="Top Branding">
+        </a>
+    </div>
+
+    <div class="podium">
+        <h2>Top 3 Worst Universities</h2>
+        <div class="podium-container">
+            <div class="podium-item" id="third-place">
+                <span class="uni-name" id="thirdUniName"></span>
+                <span class="average-score" id="thirdUniScore"></span>
+            </div>
+            <div class="podium-item" id="first-place">
+                <span class="uni-name" id="firstUniName"></span>
+                <span class="average-score" id="firstUniScore"></span>
+            </div>
+            <div class="podium-item" id="second-place">
+                <span class="uni-name" id="secondUniName"></span>
+                <span class="average-score" id="secondUniScore"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sort-options">
+        <label for="sortOrder">Sort Order:</label>
+        <select id="sortOrder">
+            <option value="asc">Lowest to Highest</option>
+            <option value="desc">Highest to Lowest</option>
+        </select>
+        <button id="applySortButton" onclick="updateChart()">Apply</button>
+    </div>
+
+    <div class="average-scores">
+        <h2>Average Scores by University</h2>
+        <div id="averageScoresChartContainer">
+            <canvas id="averageScoresChart" width="800" height="400"></canvas>
+        </div>
+        <div id="universityAcronyms"></div>
+        <div class="chart-navigation">
+            <button onclick="navigateChart(-5)">Back 5</button>
+            <button onclick="navigateChart(5)">Next 5</button>
+        </div>
+    </div>
+
+    <div class="stats">
+        <h2>Statistics</h2>
+        <p>Total Users: <span id="totalUsers"></span></p>
+        <p>Most Common Score: <span id="mostCommonScore"></span></p>
+    </div>
+
+    <div class="button-container">
+        <button id="back-button" onclick="backButton()">Back to quiz</button>
+        <button id="back-to-results-button" onclick="backToResultsButton()">Back to your results</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/uni-scores.js"></script>
+</body>
+</html>

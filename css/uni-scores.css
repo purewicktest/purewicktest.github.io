@@ -1,0 +1,129 @@
+@import url('/css/result.css');
+
+.podium {
+    text-align: center;
+    margin: 20px 15px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.podium-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.podium-item {
+    background-color: var(--third-color);
+    padding: 5px 10px; 
+    border-radius: 5px;
+    color: var(--text-color);
+    flex: 1; 
+}
+
+#first-place {
+    height: 120px; 
+}
+
+#second-place, #third-place {
+    height: 80px; 
+}
+
+.uni-name {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em; 
+}
+
+.average-score {
+    display: block;
+    font-size: 1.2em; 
+}
+
+.sort-options {
+    display: flex;
+    justify-content: flex-start; 
+    margin: 20px 0; 
+    padding: 0 15px; 
+    gap: 2px; 
+    flex-wrap: wrap; 
+}
+
+.sort-options label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+.sort-options select {
+    padding: 5px; 
+    min-width: 120px; 
+    border: 1px solid var(--border-color); 
+    border-radius: 4px; 
+    background-color: var(--input-background); 
+}
+
+.average-scores {
+    text-align: center;
+    margin: 20px;
+    padding: 0 15px; 
+}
+
+#averageScoresChart {
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stats {
+    text-align: left;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.acronym {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.acronym:hover::after {
+    content: attr(data-fullname);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+@media (max-width: 600px) {
+    .sort-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sort-options label,
+    .sort-options select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sort-options select {
+        margin-right: 0;
+    }
+}

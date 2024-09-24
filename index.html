@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Wick</title>
+    <link rel="stylesheet" href="/css/index.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3DZPMWS3W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-T3DZPMWS3W');
+    </script>
+</head>
+
+<body>
+
+    <div class="top-branding">
+        <a href="index.html">
+            <img src="img/top-branding.png" width="300" height="100" alt="Top Branding">
+        </a>
+    </div>
+
+    <header>
+        <p><b>Which is worst?</b></p>
+        <br>
+        <p>Choose your university, take the test, contribute your score, and help crown the worst university in the country (we all know it's going to be Coventry). See the results for each university at the end.</p>
+        <br>
+        <p>And yeah, it's a BTEC Rice Purity Test, but not so shit and a bit more British.</p>
+    </header>
+    
+    <hr>
+
+    <div class="uni-picker-text">
+        <p>Please enter your University: </p>
+    </div>
+    <div class="uni-picker-container">
+        <div class="dropdown">
+            <input type="text" id="university-input" placeholder="Search for a university...">
+            <ul id="university-list"></ul>
+        </div>
+        <button id="uni-submit-button">Submit</button>
+    </div>
+
+    <hr>
+
+    <main>
+        <div class="main">
+            <form id="quiz-form">
+                <div class="quiz-container">
+                </div>
+            </form>
+            <button id="quiz-submit-button" onclick="submitQuiz()">Submit</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <a href="https://www.instagram.com/purewickdick/" target="_blank">The Pure Wick Test Instagram</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/questions.js"></script>
+    <script src="/js/universities.js"></script>
+</body>
+</html>
