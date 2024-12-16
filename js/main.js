@@ -74,7 +74,8 @@ function displayMatches(matches) {
 function filterUniversities(query) {
     const universities = getUniversities();
     return universities.filter(function(university) {
-        return university.name.toLowerCase().includes(query) || university.aliases.some(alias => alias.toLowerCase().includes(query));
+        return university.name.toLowerCase().includes(query) || 
+               university.aliases.some(alias => alias.toLowerCase().includes(query));
     });
 }
 
