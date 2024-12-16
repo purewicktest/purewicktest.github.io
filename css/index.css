@@ -17,7 +17,7 @@
 }
 
 header {
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: center;
   width: 80%;
   padding: 10px;
@@ -139,32 +139,30 @@ input[type="checkbox"]:checked {
 }
 
 .uni-picker-container {
-  max-width: 1200px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
-  flex-wrap: nowrap; 
+  justify-content: center;
+  max-width: 300px;
+  padding: 15px;
   background-color: var(--secondary-color);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  display: flex; 
-  flex-grow: 1; 
-  max-width: 300px; 
-  margin-right: 10px;
 }
 
 .dropdown input[type="text"] {
-  flex-grow: 1; 
-  padding: 5px;
+  width: 100%;
+  padding: 10px;
   box-sizing: border-box;
-  border: solid var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
   font-size: 1em;
   line-height: 1.5;
   background-color: #222;
@@ -179,7 +177,9 @@ input[type="checkbox"]:checked {
 
 .dropdown ul {
   position: absolute;
-  z-index: 1;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
   width: 100%;
   max-height: 200px;
   overflow-y: auto;
@@ -192,13 +192,37 @@ input[type="checkbox"]:checked {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
 .dropdown li:hover {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
 
 .uni-picker-text {
-  padding-top: 10px; 
-  padding-left: 10px; 
-  margin-left: auto; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#uni-submit-button {
+  width: 100%;
+  padding: 10px 40px;
+  font-size: 1em;
+  margin-top: 15px;
+  background-color: var(--first-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#uni-submit-button:hover {
+  background-color: var(--second-color);
+  color: var(--text-color);
 }
